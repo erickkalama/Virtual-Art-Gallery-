@@ -4,13 +4,13 @@
         "id": 1,
         "name": "Vincent van Gogh",
         "biography": "Vincent van Gogh was a Dutch Post-Impressionist painter whose work had a far-reaching influence on 20th-century art. Born on March 30, 1853, in the Netherlands, he produced more than 2,100 artworks, including about 860 oil paintings, in just over a decade. Despite his prolific output, he struggled with mental illness and poverty throughout his life. Van Gogh is renowned for his bold, dramatic brush strokes, emotional depth, and vibrant use of color. Some of his most famous works include 'Starry Night,' 'Sunflowers,' and 'The Bedroom.' He passed away on July 29, 1890, in France.",
-        "image": "https://miro.medium.com/v2/resize:fit:1400/1*ddnTDBOoRdfX8CLUctbuaw.png"
+        "Image": "https://miro.medium.com/v2/resize:fit:1400/1*ddnTDBOoRdfX8CLUctbuaw.png"
       },
       {
         "id": 2,
         "name": "Josef Albers",
         "biography": "Josef Albers (1888–1976) was a German-born American artist and educator known for his work in abstract art and his influential color theory. He is best known for his series 'Homage to the Square', which explored color relationships and perception. Albers was also a prominent educator, teaching at the Bauhaus and later at Yale University.",
-        "Image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Josef_Albers_1972.jpg"
+        "Image": "https://imgc.artprintimages.com/img/print/edward-hopper-nighthawks-c-1942_u-l-f5b9qu0.jpg?background=F3F3F3"
       },
       {
         "id": 3,
