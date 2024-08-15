@@ -3,7 +3,7 @@ const About = () => {
   return (
     <div className="about">
       <header className="about-header">
-        <h1>About Our Virtual Art Gallery</h1>
+        <h1>CHASTEL DESIGNS</h1>
       </header>
       <section className="about-content">
         <p>
