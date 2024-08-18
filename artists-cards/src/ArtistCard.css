@@ -5,9 +5,9 @@
   
   .artist-cards-container {
     display: flex;
-    flex-wrap: wrap; /* Allows wrapping of cards if there are too many to fit in one line */
-    justify-content: center; /* Centers cards horizontally within the container */
-    gap: 16px; /* Optional: adds space between cards */
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 16px; 
   }
   
   .artist-card {
@@ -16,7 +16,7 @@
     padding: 16px;
     max-width: 300px;
     background-color:black;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for better visual separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   
   .artist-card img {
