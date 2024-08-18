@@ -1,56 +1,81 @@
-/* Navbar.css */
+/* src/components/Navbar.css */
+
+/* Navbar Styling */
 .navbar {
-    position: fixed;
+    position: fixed; /* Fixes the navbar to the top of the viewport */
     top: 0;
-    width: 100%;
+    left: 0;
+    height: 70px; /* Height of the navbar */
+    width: 100%; /* Full width of the viewport */
+    background-color: #333; /* Background color of the navbar */
+    color: #fff; /* Text color */
+    z-index: 1000; /* Ensures the navbar is above other content */
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    background-color: rgba(255, 255, 255, 0.356);
-    border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    align-items: center; /* Center content vertically */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
   }
   
-  .navbar-left .logo {
-    height: 50px;
+  /* Container for Navbar Content */
+  .navbar-logo {
+    flex: 1; /* Allows the logo to take up space */
+    padding-left: 2rem; /* Padding to the left of the logo */
   }
   
-  .navbar-center {
-    display: flex;
-    gap: 20px;
+  .logo {
+    height: 50px; /* Height of the logo image */
+    width: auto; /* Maintain aspect ratio */
   }
   
-  .navbar-center a, .navbar-right a {
-    text-decoration: none;
-    font-size: 1.1em;
-    color: brown;
-    position: relative;
-    transition: color 0.3s ease, transform 0.3s ease;
+  .navbar-links {
+    list-style: none; /* Removes default list styling */
+    display: flex; /* Horizontal alignment of menu items */
+    gap: 1.5rem; /* Space between menu items */
+    margin: 0;
+    padding: 0;
   }
   
-  .navbar-center a:hover, .navbar-right a:hover {
-    color: black;
-    transform: scale(1.05);
+  .navbar-links li {
+    margin: 0;
   }
   
-  .navbar-right {
-    display: flex;
-    gap: 20px;
+  .navbar-links a {
+    color: #fff; /* Text color of menu items */
+    text-decoration: none; /* Removes underline */
+    padding: 0.5rem 1rem; /* Padding inside menu items */
+    display: block; /* Makes the entire area clickable */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
   }
   
-  .contact-us {
-    background-color: gray;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  .navbar-links a:hover {
+    background-color: #555; /* Background color on hover */
+    border-radius: 4px; /* Optional rounded corners on hover */
   }
   
-  .contact-us:hover {
-    background-color: darkgray;
-    color: rgb(58, 58, 58);
+  .navbar-links a.active {
+    background-color: #444; /* Background color for the active menu item */
+    border-radius: 4px; /* Optional rounded corners for the active item */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: flex-start; /* Align items to the start */
+    }
+  
+    .navbar-logo {
+      padding-left: 1rem; /* Adjust padding on mobile */
+    }
+  
+    .navbar-links {
+      flex-direction: column; /* Stack menu items vertically */
+      gap: 0.5rem; /* Reduced space between menu items */
+      width: 100%; /* Full width for mobile menu */
+      padding: 0 1rem; /* Add padding to mobile menu */
+    }
+  
+    .navbar-links a {
+      padding: 1rem; /* Larger padding for easier clicking on mobile */
+    }
   }
   
